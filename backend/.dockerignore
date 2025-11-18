@@ -1,0 +1,16 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.env
+.git
+.gitignore
+*.md
+!README.md
+.DS_Store
+*.log
+embeddings_cache.npz

@@ -1,0 +1,6 @@
+frontend/.node_modules
+backend/.env
+backend/data
+frontend
+frontend/.env
+backend/embeddings_cache.npz
