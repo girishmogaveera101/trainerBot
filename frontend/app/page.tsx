@@ -46,8 +46,8 @@ export default function Home() {
     setIsLoading(true);
 
     try {
-      const response = await fetch(`${BACKEND_URL}/ask`, {
-      // const response = await fetch(`http://localhost:7860/ask`, {
+      // const response = await fetch(`${BACKEND_URL}/ask`, {
+      const response = await fetch(`http://localhost:7860/ask`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -86,7 +86,7 @@ export default function Home() {
   return (
     <div className="flex flex-col h-screen bg-black">
       {/* Header */}
-      <div className="bg-black flex justify-start pl-[5%] border-b border-gray-700 py-4 shadow-xl">
+      <div className="bg-black fixed top-0 w-full flex justify-start pl-[5%] border-b border-gray-700 py-4 shadow-xl">
           <div>
             <h1 className="text-3xl font-bold text-blue-400">TrainerBot</h1>
             <p className="text-md text-gray-400">Powered by Groq & RAG</p>
@@ -94,7 +94,7 @@ export default function Home() {
       </div>
 
       {/* Messages Container */}
-      <div className="flex-1 bg-black overflow-y-auto px-4 py-6 pb-[10%]">
+      <div className="flex-1 bg-black overflow-y-auto px-4 mt-[10%] md:mt-[0%] py-[10%]">
         <div className="md:mx-[15%] space-y-6">
           {messages.map((msg, idx) => (
             <div
