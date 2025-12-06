@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import { Send } from 'lucide-react';
 const BACKEND_URL: string = process.env.NEXT_PUBLIC_BACKEND_URL || "";
 
+
 interface Message {
   role: 'user' | 'assistant';
   content: string;
